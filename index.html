@@ -1,1 +1,57 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Movie Booking App</h1>
+        </div>
+        <div class="search-and-filter">
+            <div class="search">
+                <input type="text" id="search-input" value="" placeholder="Search Movies">
+                <button id="search-button" onclick ="onSubmitHandler(event)">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="movie-section">
+        <div class="filter">
+            <ul id="genre-filter" class="genre-filter">
+                <li value="all"onclick="onClickHandler" ><button id="all" onclick="loadAll(event)">All Genres</button></li>
+                <li value="action" onclick="onClickHandler"><button id="action" onclick="onClickHandler(event)"> Actions</button></li>
+                <li value="adventure" onclick="onClickHandler"><button id="adventure" onclick="onClickHandler(event)"> Adventure</button></li>
+                <li value="animation" onclick="onClickHandler"><button id="animation" onclick="onClickHandler(event)"> Animation</button></li>
+                <li value="comedy" onclick="onClickHandler"><button id="comedy" onclick="onClickHandler(event)">Comedy</button></li>
+                <li value="crime" onclick="onClickHandler"><button id="crime" onclick="onClickHandler(event)"> Crime</button></li>
+                <li value="documentary" onclick="onClickHandler"><button id="documentary" onclick="onClickHandler(event)"> Documentary</button></li>
+                <li value="Drama" onclick="onClickHandler"><button id="Drama" onclick="onClickHandler(event)"> Drama</button></li>
+                <li value="Family" onclick="onClickHandler"><button id="Family" onclick="onClickHandler(event)"> Family</button></li>
+                <li value="Fantasy" onclick="onClickHandler"><button id="Fantasy" onclick="onClickHandler(event)"> Fantasy</button></li>
+                <li value="History" onclick="onClickHandler"><button id="History" onclick="onClickHandler(event)"> History</button></li>
+                <li value="Horror" onclick="onClickHandler"><button id="Horror" onclick="onClickHandler(event)"> Horror</button></li>
+                <li value="Music" onclick="onClickHandler"><button id="Music" onclick="onClickHandler(event)"> Music</button></li>
+                <li value="Mystery" onclick="onClickHandler"><button id="Mystery" onclick="onClickHandler(event)"> Mystery</button></li>
+                <li value="Romance" onclick="onClickHandler"><button id="Romance" onclick="onClickHandler(event)"> Romance</button></li>
+                <li value="Thriller" onclick="onClickHandler"><button id="Thriller" onclick="onClickHandler(event)"> Thriller</button></li>
+                <li value="War" onclick="onClickHandler"><button id="War" onclick="onClickHandler(event)"> War</button></li>
+                
+                
+            </ul>
+        </div>
+        <div class="movie-list">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Movie Booking App</p>
+    </footer>
+
+    <script src="App.js"></script>
+</body>
+</html>
