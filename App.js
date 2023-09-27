@@ -113,7 +113,7 @@ const bookNowButton = document.createElement("button");
   // Define the function to execute when the button is clicked
   bookNowButton.addEventListener("click", function() {
     // Replace this with the URL of your booking page
-    var bookingURL = "http://127.0.0.1:5500/booknow.html";
+    var bookingURL = "https://jonsnowsenior.github.io/Movie-Booking-Application---Javascript-Project---go7i3v62quvv//booknow.html";
 
     // Open the booking page in a new tab or window
     window.open(bookingURL, "_blank");
