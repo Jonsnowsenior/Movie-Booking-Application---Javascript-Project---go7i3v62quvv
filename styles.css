@@ -131,6 +131,10 @@ header {
 
 }
 
+.movie-card:hover {
+   background-color: aqua;
+}
+
 .movie-card img {
     max-width: 100%;
     height: auto;
@@ -153,7 +157,7 @@ footer{
 
 
 
-.movie-details {
+/* .movie-details {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,6 +174,10 @@ footer{
     text-align: center;
 }
 
+.movie-detail-card{
+    background-color: aqua;
+}
+
 #movie-poster {
     max-width: 100%;
     height: auto;
@@ -184,12 +192,12 @@ footer{
 
 #movie-overview {
     margin: 10px 0;
-}
+} */
 
-#movie-rating,
+/* #movie-rating,
 #movie-language {
     font-weight: bold;
-}
+} */
 
 .rating-div{
     display: inline-block;
@@ -232,15 +240,10 @@ s {
     border: 0px;
     background-color: transparent;
     color: white;
-
+    size: 100%;
 }
 
-#genre-filter li button:hover {
-    border: 0px;
-    background-color: black;
-    color: white;
 
-}
 
 
 
@@ -252,3 +255,25 @@ s {
         display: none;
     }
   }
+
+
+  .book-now-btn{
+    margin-top: 10px;
+    background-color: rgb(25, 20, 20);
+    padding: 12px 30px;
+    font-family: inherit;
+    font-weight: 500;
+    border-radius: 20px;
+    
+    color: rgb(255, 255, 255);
+    width: 80%;
+}
+
+.book-now-btn:hover{
+    transform: scale(1.02);
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    cursor: pointer;
+    color: black;
+}
+

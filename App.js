@@ -103,6 +103,30 @@ const langDiv = document.createElement('div')
 langDiv.classList.add('lang-div');
 langDiv.appendChild(language);
 
+const bookNowButton = document.createElement("button");
+  bookNowButton.textContent = "Book Now";
+
+  // Set attributes for the button (optional)
+  bookNowButton.id = "bookNowButton";
+  bookNowButton.className = "book-now-btn"; // You can add a CSS class for styling
+
+  // Define the function to execute when the button is clicked
+  bookNowButton.addEventListener("click", function() {
+    // Replace this with the URL of your booking page
+    var bookingURL = "http://127.0.0.1:5500/booknow.html";
+
+    // Open the booking page in a new tab or window
+    window.open(bookingURL, "_blank");
+  });
+
+  // Get a reference to the container where you want to add the button
+  constbookNowContainervar  = document.getElementById("bookNowContainer");
+
+  // Append the button to the container
+  
+
+  // Get a reference to the container
+
   // Append the elements to the movieCard div
   
   movieCard.appendChild(posterImage);
@@ -110,6 +134,7 @@ langDiv.appendChild(language);
   movieCard.appendChild(overviewParagraph);
   movieCard.appendChild(ratingdDiv);
   movieCard.appendChild(langDiv);
+  movieCard.appendChild(bookNowButton);
 
   
 
