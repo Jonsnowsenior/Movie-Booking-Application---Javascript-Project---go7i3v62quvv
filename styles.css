@@ -251,7 +251,8 @@ s {
     border: 0px;
     background-color: transparent;
     color: white;
-    size: 100%;
+    width: 100%;
+    text-align: left;
 }
 
 @media (max-width: 767px) {
